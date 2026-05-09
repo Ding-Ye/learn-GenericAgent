@@ -5,4 +5,5 @@ use (
 	./agents/s02-tools
 	./agents/s03-outcome
 	./agents/s04-claude
+	./agents/s05-coderun
 )

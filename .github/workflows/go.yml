@@ -16,6 +16,7 @@ jobs:
           - s02-tools
           - s03-outcome
           - s04-claude
+          - s05-coderun
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
