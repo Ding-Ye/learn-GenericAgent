@@ -1,0 +1,30 @@
+# Go
+*.test
+*.out
+*.exe
+/agents/*/[!a-z_]*
+/agents/*/<binary>
+bin/
+dist/
+
+# Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Web
+node_modules/
+.next/
+.turbo/
+*.tsbuildinfo
+
+# Build artifacts
+agents/s*/s[0-9][0-9]-*
+
+# Working dir of generator
+.learn/
+
+# Local secrets
+.env
+.env.local
+mykey.json

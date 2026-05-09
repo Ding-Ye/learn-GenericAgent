@@ -1,0 +1,46 @@
+name: docs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  bilingual-parity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: each zh doc has an en doc
+        run: |
+          set -e
+          for f in docs/zh/*.md; do
+            base=$(basename "$f")
+            if [ ! -f "docs/en/$base" ]; then
+              echo "MISSING: docs/en/$base"; exit 1
+            fi
+          done
+      - name: header counts match
+        run: |
+          set -e
+          fail=0
+          for f in docs/zh/*.md; do
+            base=$(basename "$f")
+            zh=$(grep -c '^#' "$f")
+            en=$(grep -c '^#' "docs/en/$base")
+            if [ "$zh" != "$en" ]; then
+              echo "HEADER MISMATCH: $base (zh=$zh en=$en)"; fail=1
+            fi
+          done
+          test "$fail" = "0"
+      - name: each session doc has six required sections
+        run: |
+          set -e
+          fail=0
+          for f in docs/zh/s[0-9]*.md docs/en/s[0-9]*.md; do
+            for h in "Problem" "Solution" "How It Works" "What Changed" "Try It" "Upstream Source Reading"; do
+              # Match Chinese variants too: ## 问题 / ## 方案 etc are accepted via section anchor doubling
+              grep -q "^## .*$h" "$f" || { echo "MISSING SECTION '$h' in $f"; fail=1; }
+            done
+          done
+          test "$fail" = "0"
