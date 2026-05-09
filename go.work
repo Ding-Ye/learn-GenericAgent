@@ -8,4 +8,5 @@ use (
 	./agents/s05-coderun
 	./agents/s06-fileops
 	./agents/s07-memory
+	./agents/s08-skills
 )

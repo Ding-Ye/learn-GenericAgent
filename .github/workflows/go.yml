@@ -19,6 +19,7 @@ jobs:
           - s05-coderun
           - s06-fileops
           - s07-memory
+          - s08-skills
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5

@@ -15,7 +15,7 @@ export const SESSIONS: Session[] = [
   { slug: "s05-coderun",  num: "s05",     titleZh: "流式代码执行工具",         titleEn: "Streaming Code Execution",         upstream: "ga.py:code_run",                 available: true  },
   { slug: "s06-fileops",  num: "s06",     titleZh: "文件读写补丁工具",         titleEn: "File Read / Write / Patch",       upstream: "ga.py:file_read/write/patch",    available: true  },
   { slug: "s07-memory",   num: "s07",     titleZh: "分层记忆与 working ckpt",  titleEn: "Layered Memory + Checkpoint",     upstream: "memory/ + ga.py",                available: true  },
-  { slug: "s08-skills",   num: "s08",     titleZh: "技能树与技能搜索",         titleEn: "Skill Tree & Skill Search",       upstream: "memory/skill_search/SKILL.md",   available: false },
+  { slug: "s08-skills",   num: "s08",     titleZh: "技能树与技能搜索",         titleEn: "Skill Tree & Skill Search",       upstream: "memory/skill_search/SKILL.md",   available: true  },
   { slug: "s09-mixin",    num: "s09",     titleZh: "多 provider 故障切换",     titleEn: "Multi-Provider Failover",         upstream: "llmcore.py:MixinSession",        available: false },
   { slug: "s10-reflect",  num: "s10",     titleZh: "反射模式与自动调度",       titleEn: "Reflect Mode & Scheduling",       upstream: "agentmain.py --reflect",         available: false },
   { slug: "s_full",       num: "s_full",  titleZh: "集成端到端用例",           titleEn: "End-to-end Integration",          upstream: "agentmain.py",                   available: false },

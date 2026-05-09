@@ -38,7 +38,7 @@ This repo breaks upstream into 10 Go learning modules. Each chapter is a
 | s05 | [s05-coderun](agents/s05-coderun) | Streaming code execution tool | `ga.py:code_run` | ✅ |
 | s06 | [s06-fileops](agents/s06-fileops) | File read / write / patch tools | `ga.py:file_read/write/patch` | ✅ |
 | s07 | [s07-memory](agents/s07-memory) | Layered memory + working checkpoint | `memory/`, `ga.py:do_update_working_checkpoint` | ✅ |
-| s08 | s08-skills | Skill tree & skill search | `memory/skill_search/SKILL.md` | ⏳ |
+| s08 | [s08-skills](agents/s08-skills) | Skill tree & skill search | `memory/skill_search/SKILL.md` | ✅ |
 | s09 | s09-mixin | Multi-provider failover | `llmcore.py:MixinSession` | ⏳ |
 | s10 | s10-reflect | Reflect mode & autonomous scheduling | `agentmain.py --reflect`, `reflect/scheduler.py` | ⏳ |
 | s_full | Integration | Wire all 10 chapters into one end-to-end use case | `agentmain.py:GenericAgent` | ⏳ |
