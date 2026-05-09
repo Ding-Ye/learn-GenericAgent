@@ -21,6 +21,7 @@ jobs:
           - s07-memory
           - s08-skills
           - s09-mixin
+          - s10-reflect
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5

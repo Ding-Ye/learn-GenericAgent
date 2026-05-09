@@ -10,4 +10,5 @@ use (
 	./agents/s07-memory
 	./agents/s08-skills
 	./agents/s09-mixin
+	./agents/s10-reflect
 )
