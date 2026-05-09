@@ -14,6 +14,7 @@ jobs:
         session:
           - s01-loop
           - s02-tools
+          - s03-outcome
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
