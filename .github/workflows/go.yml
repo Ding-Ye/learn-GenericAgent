@@ -20,6 +20,7 @@ jobs:
           - s06-fileops
           - s07-memory
           - s08-skills
+          - s09-mixin
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
