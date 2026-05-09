@@ -6,4 +6,5 @@ use (
 	./agents/s03-outcome
 	./agents/s04-claude
 	./agents/s05-coderun
+	./agents/s06-fileops
 )

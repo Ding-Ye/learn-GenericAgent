@@ -17,6 +17,7 @@ jobs:
           - s03-outcome
           - s04-claude
           - s05-coderun
+          - s06-fileops
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
