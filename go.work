@@ -7,4 +7,5 @@ use (
 	./agents/s04-claude
 	./agents/s05-coderun
 	./agents/s06-fileops
+	./agents/s07-memory
 )

@@ -18,6 +18,7 @@ jobs:
           - s04-claude
           - s05-coderun
           - s06-fileops
+          - s07-memory
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
