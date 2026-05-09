@@ -41,9 +41,9 @@ This repo breaks upstream into 10 Go learning modules. Each chapter is a
 | s08 | [s08-skills](agents/s08-skills) | Skill tree & skill search | `memory/skill_search/SKILL.md` | ✅ |
 | s09 | [s09-mixin](agents/s09-mixin) | Multi-provider failover | `llmcore.py:MixinSession` | ✅ |
 | s10 | [s10-reflect](agents/s10-reflect) | Reflect mode & autonomous scheduling | `agentmain.py --reflect`, `reflect/scheduler.py` | ✅ |
-| s_full | Integration | Wire all 10 chapters into one end-to-end use case | `agentmain.py:GenericAgent` | ⏳ |
-| Appendix A | The essence of self-evolution | The "skill crystallization" mental model | README + memory/ | ⏳ |
-| Appendix B | Upstream source reading map | File-by-file → chapter cross-reference | whole repo | ⏳ |
+| s_full | [Integration](docs/en/s_full-integration.md) | Wire all 10 chapters into one end-to-end use case | `agentmain.py:GenericAgent` | ✅ |
+| Appendix A | [The essence of self-evolution](docs/en/appendix-a-self-evolution.md) | The "skill crystallization" mental model | README + memory/ | ✅ |
+| Appendix B | [Upstream source reading map](docs/en/appendix-b-upstream-map.md) | File-by-file → chapter cross-reference | whole repo | ✅ |
 
 ✅ = available; ⏳ = coming.
 

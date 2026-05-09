@@ -18,7 +18,7 @@ export const SESSIONS: Session[] = [
   { slug: "s08-skills",   num: "s08",     titleZh: "技能树与技能搜索",         titleEn: "Skill Tree & Skill Search",       upstream: "memory/skill_search/SKILL.md",   available: true  },
   { slug: "s09-mixin",    num: "s09",     titleZh: "多 provider 故障切换",     titleEn: "Multi-Provider Failover",         upstream: "llmcore.py:MixinSession",        available: true  },
   { slug: "s10-reflect",  num: "s10",     titleZh: "反射模式与自动调度",       titleEn: "Reflect Mode & Scheduling",       upstream: "agentmain.py --reflect",         available: true  },
-  { slug: "s_full",       num: "s_full",  titleZh: "集成端到端用例",           titleEn: "End-to-end Integration",          upstream: "agentmain.py",                   available: false },
-  { slug: "appendix-a-self-evolution", num: "附录 A", titleZh: "自演化的本质", titleEn: "The essence of self-evolution",   upstream: "memory/ + README",               available: false },
-  { slug: "appendix-b-upstream-map",   num: "附录 B", titleZh: "上游源码导读", titleEn: "Upstream source-reading map",     upstream: "whole repo",                     available: false },
+  { slug: "s_full",       num: "s_full",  titleZh: "集成端到端用例",           titleEn: "End-to-end Integration",          upstream: "agentmain.py",                   available: true},
+  { slug: "appendix-a-self-evolution", num: "附录 A", titleZh: "自演化的本质", titleEn: "The essence of self-evolution",   upstream: "memory/ + README",               available: true},
+  { slug: "appendix-b-upstream-map",   num: "附录 B", titleZh: "上游源码导读", titleEn: "Upstream source-reading map",     upstream: "whole repo",                     available: true},
 ];
