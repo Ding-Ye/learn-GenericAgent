@@ -32,7 +32,7 @@ This repo breaks upstream into 10 Go learning modules. Each chapter is a
 | #  | Module | What it teaches | Upstream | Status |
 |----|--------|-----------------|----------|--------|
 | s01 | [s01-loop](agents/s01-loop) | The minimal agent loop | `agent_loop.py:agent_runner_loop` | ✅ |
-| s02 | s02-tools | Tool registry & dispatch | `agent_loop.py:BaseHandler` | ⏳ |
+| s02 | [s02-tools](agents/s02-tools) | Tool registry & dispatch | `agent_loop.py:BaseHandler` | ✅ |
 | s03 | s03-outcome | StepOutcome control flow | `agent_loop.py:StepOutcome` | ⏳ |
 | s04 | s04-claude | Real Anthropic Claude provider | `llmcore.py:NativeClaudeSession` | ⏳ |
 | s05 | s05-coderun | Streaming code execution tool | `ga.py:code_run` | ⏳ |
