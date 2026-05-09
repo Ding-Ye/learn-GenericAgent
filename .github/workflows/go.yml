@@ -15,6 +15,7 @@ jobs:
           - s01-loop
           - s02-tools
           - s03-outcome
+          - s04-claude
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5

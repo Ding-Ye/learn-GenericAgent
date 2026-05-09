@@ -11,7 +11,7 @@ export const SESSIONS: Session[] = [
   { slug: "s01-loop",     num: "s01",     titleZh: "最小 Agent 主循环",       titleEn: "The Minimal Agent Loop",          upstream: "agent_loop.py:agent_runner_loop", available: true  },
   { slug: "s02-tools",    num: "s02",     titleZh: "工具注册表与 dispatch",    titleEn: "Tool Registry & Dispatch",        upstream: "agent_loop.py:BaseHandler",      available: true  },
   { slug: "s03-outcome",  num: "s03",     titleZh: "StepOutcome 控制流",       titleEn: "StepOutcome Control Flow",        upstream: "agent_loop.py:StepOutcome",      available: true  },
-  { slug: "s04-claude",   num: "s04",     titleZh: "真实 Anthropic Claude",   titleEn: "Real Anthropic Claude Provider",  upstream: "llmcore.py:NativeClaudeSession", available: false },
+  { slug: "s04-claude",   num: "s04",     titleZh: "真实 Anthropic Claude",   titleEn: "Real Anthropic Claude Provider",  upstream: "llmcore.py:NativeClaudeSession", available: true  },
   { slug: "s05-coderun",  num: "s05",     titleZh: "流式代码执行工具",         titleEn: "Streaming Code Execution",         upstream: "ga.py:code_run",                 available: false },
   { slug: "s06-fileops",  num: "s06",     titleZh: "文件读写补丁工具",         titleEn: "File Read / Write / Patch",       upstream: "ga.py:file_read/write/patch",    available: false },
   { slug: "s07-memory",   num: "s07",     titleZh: "分层记忆与 working ckpt",  titleEn: "Layered Memory + Checkpoint",     upstream: "memory/ + ga.py",                available: false },

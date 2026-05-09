@@ -34,7 +34,7 @@ This repo breaks upstream into 10 Go learning modules. Each chapter is a
 | s01 | [s01-loop](agents/s01-loop) | The minimal agent loop | `agent_loop.py:agent_runner_loop` | ✅ |
 | s02 | [s02-tools](agents/s02-tools) | Tool registry & dispatch | `agent_loop.py:BaseHandler` | ✅ |
 | s03 | [s03-outcome](agents/s03-outcome) | StepOutcome control flow | `agent_loop.py:StepOutcome` | ✅ |
-| s04 | s04-claude | Real Anthropic Claude provider | `llmcore.py:NativeClaudeSession` | ⏳ |
+| s04 | [s04-claude](agents/s04-claude) | Real Anthropic Claude provider | `llmcore.py:NativeClaudeSession` | ✅ |
 | s05 | s05-coderun | Streaming code execution tool | `ga.py:code_run` | ⏳ |
 | s06 | s06-fileops | File read / write / patch tools | `ga.py:file_read/write/patch` | ⏳ |
 | s07 | s07-memory | Layered memory + working checkpoint | `memory/`, `ga.py:do_update_working_checkpoint` | ⏳ |
